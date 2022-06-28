@@ -8,11 +8,7 @@ import { useAppContext } from '../context/state';
 
 // Function GetStaticPaths to generate Paths
 export const getStaticPaths = async () => {
-    const res = await fetch('https://serene-atoll-19450.herokuapp.com/api/planets/', {
-        headers: new Headers({
-        'Authorization': `Bearer ${process.env.TOKEN_API}`
-        })
-    })
+    const res = await fetch('https://serene-atoll-19450.herokuapp.com/api/planets/')
     const planets = await res.json();
     const data = planets.data
     const paths = data.map(planet => {

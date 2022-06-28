@@ -36,11 +36,7 @@ export const getStaticProps = async (context) => {
 
     const id = context.params.planet
     const linkToFetch = 'https://serene-atoll-19450.herokuapp.com/api/planets/' + id + `?${query}`
-    const res = await fetch(linkToFetch, {
-        headers: new Headers({
-        'Authorization': `Bearer ${process.env.TOKEN_API}`
-        })
-    })
+    const res = await fetch(linkToFetch)
     const planet = await res.json()
     const data = planet.data
 

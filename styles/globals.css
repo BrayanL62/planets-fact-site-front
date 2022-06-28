@@ -1,9 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind components;
+@import url(./navbar.css);
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: url('../public/assets/background-stars.svg');
+  background-color: #070724;
 }
 
 a {
@@ -13,4 +21,51 @@ a {
 
 * {
   box-sizing: border-box;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .planet {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "planet--image planet--image"
+      "planet--description planet--informations";
+    height: 755px;
+  }
+  
+  .planet--image { grid-area: planet--image; }
+  
+  .planet--description { grid-area: planet--description; }
+  
+  .planet--informations { grid-area: planet--informations; }
+  
+}
+
+@media screen and (min-width: 1024px) {
+
+  .planet--image {
+    grid-row: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1;
+  }
+
+  .planet--informations {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  .planet--description {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
 }

@@ -3,6 +3,7 @@
 @tailwind utilities;
 @tailwind components;
 @import url(./navbar.css);
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan:wght@400;700&display=swap');
 
 html,
 body {
@@ -29,7 +30,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    gap: 0px 408px;
     grid-auto-flow: row;
     grid-template-areas:
       "planet--image planet--image"
@@ -52,6 +53,7 @@ a {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column: 1;
+
   }
 
   .planet--informations {
@@ -68,4 +70,18 @@ a {
     grid-row-end: 1;
   }
   
+}
+
+/* ---------- Mise en place des fonts ---------- */
+.fontAntonio {
+  font-family: 'Antonio', sans-serif;
+}
+
+.fontSpartanRegular {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.fontSpartanBold {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
 }

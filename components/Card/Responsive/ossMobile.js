@@ -22,7 +22,7 @@ const OverviewStructureSurfaceMobile = ({
     }
 
     return ( 
-        <ul className="flex justify-around list-none border-b border-white/25 cursor-pointer items-center text-[10px] tracking-[1.93px] planet--informations uppercase">
+        <ul className=" fontSpartanBold flex justify-around list-none border-b border-white/25 cursor-pointer items-center text-[10px] tracking-[1.93px] planet--informations uppercase">
                 <li 
                 onClick={() => {
                         setactualLink(0)

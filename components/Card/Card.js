@@ -65,7 +65,7 @@ const Card = ({
     
     
     return ( 
-        <div className='planet md:w-[689px] lg:w-[900px] xl:w-[1200px] m-auto'>
+        <div className='planet md:w-[689px] lg:w-[900px] xl:w-[1007px] m-auto'>
 
             { isBreakpoint ? (
                     <OverviewStructureSurfaceMobile color={color} />
@@ -74,7 +74,7 @@ const Card = ({
                 )
             }
 
-            <div className="flex m-auto h-[304px] relative planet--image md:h-[461px]">
+            <div className="flex m-auto h-[304px] relative planet--image md:h-[461px] xl:top-[15px] xl:left-[108px]">
                     <div className={`${planets[planetName]}`}>
                         <Image 
                             src={
@@ -104,11 +104,11 @@ const Card = ({
                         }
             </div>
 
-            <article className="w-[327px] lg:w-[350px] text-center mx-auto planet--description h-[253px] md:text-left lg:my-auto">
-                <p className="font-antonio-regular text-[40px] md:font-antonio-regular md:text-5xl lg:text-[80px]">
+            <article className="w-[327px] lg:w-[350px] text-center mx-auto planet--description h-[253px] md:text-left lg:mt-auto xl:relative xl:top-5">
+                <p className="fontAntonio text-[40px] md:font-antonio-regular md:text-5xl lg:text-[80px]">
                     {planetName.toUpperCase()}
                 </p>
-                <p className="planet__overview--content py-2 text-xs leading-[22px] lg:leading-6 md:my-4 lg:text-sm">
+                <p className=" fontSpartanRegular planet__overview--content py-2 text-xs leading-[22px] md:my-4 lg:text-sm lg:leading-[25px] lg:text-[14px] lg:my-6">
                     {
                         sharedState == 0 ? overviewContent : null
                     }
@@ -119,7 +119,7 @@ const Card = ({
                         sharedState == 2 ? surfaceContent : null
                     }
                 </p>
-                <p className="text-white/25">
+                <p className="fontSpartanRegular text-white/25">
                     Source : 
                     <Link 
                         {
@@ -132,12 +132,12 @@ const Card = ({
                             ...sharedState == 2 ? {href: surfaceSource} : null
                         }
                     >
-                    <a className="bold mx-1 underline text-xs leading-6">
+                    <a className="fontSpartanRegular bold mx-2 underline text-xs lg:text-[14px] leading-6">
                         Wikipedia 
                     </a>
                     </Link>
                     <Image 
-                    className=""
+                    className="align-bottom"
                     src={sourceIcon}
                     width={12}
                     height={12}

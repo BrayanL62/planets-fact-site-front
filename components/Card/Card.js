@@ -74,7 +74,7 @@ const Card = ({
                 )
             }
 
-            <div className="flex m-auto h-[304px] relative planet--image md:h-[461px] xl:top-[15px] xl:left-[108px]">
+            <div className="flex m-auto h-[304px] relative planet--image md:h-[461px] xl:h-[670px]">
                     <div className={`${planets[planetName]}`}>
                         <Image 
                             src={

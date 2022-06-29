@@ -65,7 +65,7 @@ const Card = ({
     
     
     return ( 
-        <div className='planet md:w-[689px] lg:w-[900px] xl:w-[1007px] m-auto'>
+        <div className='planet md:w-[689px] lg:w-[900px] xl:w-[1200px] m-auto'>
 
             { isBreakpoint ? (
                     <OverviewStructureSurfaceMobile color={color} />

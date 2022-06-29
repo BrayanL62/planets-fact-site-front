@@ -9,7 +9,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Antonio', sans-serif;
+  font-family: Antonio;
   background: url('../public/assets/background-stars.svg');
   background-color: #070724;
 }

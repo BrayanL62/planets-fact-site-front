@@ -72,15 +72,12 @@ a {
 }
 
 /* ---------- Mise en place des fonts ---------- */
-.fontAntonio {
-  font-family: 'Antonio', sans-serif;
-}
 
 .fontSpartanRegular {
-  font-family: 'League Spartan', sans-serif;
+  font-family: League Spartan, sans-serif;
 }
 
 .fontSpartanBold {
-  font-family: 'League Spartan', sans-serif;
+  font-family: League Spartan, sans-serif;
   font-weight: 700;
 }

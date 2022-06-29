@@ -14,7 +14,7 @@ const NavbarMobile = () => {
   return ( 
     <div className="uppercase">
       <nav className="navbar flex justify-between px-6 pt-[0.8rem] pb-2 z-20 border-b border-white/25 h-[68px] items-center">
-          <h1 className="fontAntonio tracking-[-1.05px] text-[28px]">The Planets</h1>
+          <h1 className="tracking-[-1.05px] text-[28px]">The Planets</h1>
           <div className="icon cursor-pointer" onClick={toggleActiveClass}>
               <Image
               src={hamburger}

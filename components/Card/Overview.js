@@ -40,7 +40,7 @@ const Overview = ({
                   <span className="fontSpartanBold text-[8px] lg:text-[11px] tracking-[0.73px] lg:tracking-[1px] text-white/50 uppercase">
                       Rotation Time
                   </span>
-                  <span className="fontAntonio text-[20px] lg:text-[30px] xl:text-[30px] font-antonio-regular">
+                  <span className="text-[20px] lg:text-[30px] xl:text-[30px]">
                       {rotationTime}
                   </span>
                 </div>
@@ -48,7 +48,7 @@ const Overview = ({
                   <span className="fontSpartanBold text-[8px] lg:text-[11px] tracking-[0.73px] lg:tracking-[1px] text-white/50 uppercase">
                       Revolution Time
                   </span>
-                  <span className="fontAntonio text-[20px] lg:text-[30px] xl:text-[30px] font-antonio-regular">
+                  <span className="text-[20px] lg:text-[30px] xl:text-[30px]">
                       {revolutionTime}
                   </span>
                 </div>
@@ -56,7 +56,7 @@ const Overview = ({
                   <span className="fontSpartanBold text-[8px] lg:text-[11px] tracking-[0.73px] lg:tracking-[1px] text-white/50 uppercase">
                       Radius
                   </span>
-                  <span className="fontAntonio text-[20px] lg:text-[30px] xl:text-[30px] font-antonio-regular">
+                  <span className="text-[20px] lg:text-[30px] xl:text-[30px]">
                       {radius}
                   </span>
                 </div>
@@ -64,7 +64,7 @@ const Overview = ({
                   <span className="fontSpartanBold text-[8px] lg:text-[11px] tracking-[0.73px] lg:tracking-[1px] text-white/50 uppercase">
                       Average Temp.
                   </span>
-                  <span className="fontAntonio text-[20px] lg:text-[30px] xl:text-[30px] font-antonio-regular">
+                  <span className="text-[20px] lg:text-[30px] xl:text-[30px]">
                       {averageTemp}
                   </span>
                 </div>

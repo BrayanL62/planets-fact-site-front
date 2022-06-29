@@ -8,7 +8,7 @@ const NavbarDesktop = () => {
 
     return ( 
         <nav className="navbar uppercase flex flex-col justify-around lg:justify-between px-6 pt-[0.8rem] pb-2 z-20 border-b border-white/25 items-center h-[159px] lg:flex-row lg:h-[81px]">
-            <h1 className="fontAntonio tracking-[-1.05px] text-[28px]">The Planets</h1>
+            <h1 className="tracking-[-1.05px] text-[28px]">The Planets</h1>
             <div className="fontSpartanBold flex justify-around w-[665px] tracking-[1.36px] text-sm leading-7">
                 <Link href="/1">
                     <a className={router.asPath.endsWith("/1") ? "link lg:border-t-4 py-[26px] lg:w-[80px] text-center lg:border-mercury-menu" : "link lg:border-t-4 lg:border-transparent py-[26px] lg:w-[80px] text-center"}>

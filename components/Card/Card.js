@@ -105,7 +105,7 @@ const Card = ({
             </div>
 
             <article className="w-[327px] lg:w-[350px] text-center mx-auto planet--description h-[253px] md:text-left lg:mt-auto xl:relative xl:top-5">
-                <p className="fontAntonio text-[40px] md:font-antonio-regular md:text-5xl lg:text-[80px]">
+                <p className="text-[40px] md:text-5xl lg:text-[80px]">
                     {planetName.toUpperCase()}
                 </p>
                 <p className=" fontSpartanRegular planet__overview--content py-2 text-xs leading-[22px] md:my-4 lg:text-sm lg:leading-[25px] lg:text-[14px] lg:my-6">
